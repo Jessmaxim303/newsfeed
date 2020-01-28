@@ -1,0 +1,9 @@
+* {
+  border: 1px solid red;
+}
+
+#box {
+  width: 250px;
+  height: 150px;
+  background: lightblue;
+}
