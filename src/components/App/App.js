@@ -8,24 +8,33 @@ import health from '../../data/health';
 import './App.css';
 
 import NewsContainer from '../NewsContainer/NewsContainer';
+import Menu from '../Menu/Menu';
+
+const dataTypes = {
+  'local': local,
+  'entertainment': entertainment,
+  'technology': technology,
+  'science': science,
+  'health': health
+}
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      "local": local,
-      "entertainment": entertainment,
-      "technology": technology,
-      "science": science,
-      "health": health
+      type: local
     }
+  }
+
+  filterNewsType = (e) => {
+    this.setState({ type: dataTypes[e.target.id]})
   }
      
   render () {
     return (
       <div className="app">
-      <h1>Header</h1>
-        <NewsContainer data={this.state['science']} />
+        < Menu filterNewsType={this.filterNewsType} />
+        < NewsContainer data={this.state.type} />
       </div>
     );
   }

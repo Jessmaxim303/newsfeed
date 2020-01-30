@@ -2,7 +2,7 @@ import React from 'react';
 import './NewsArticle.css';
 
 const NewsArticle = (props) => {
-	console.log(props.data)
+	// console.log(props.data)
 	return (
     <article id="box">
    	  <img className="news_img" src={props.data.img} />

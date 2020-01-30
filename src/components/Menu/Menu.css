@@ -1,0 +1,21 @@
+* {
+	/*border: 1px solid red;*/
+}
+
+.menu_container {
+	width: 100%;
+	min-height: 10vh;
+	background: purple;
+	color: #ffffff;
+}
+
+.menu_title-text {
+	font-size: 28pt;
+}
+
+.news_button {
+	margin: 0 7px;
+  width: 90px;
+  height: 28px;
+  font-size: 12px;
+}
