@@ -9,6 +9,7 @@ import './App.css';
 
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
+import SearchForm from '../SearchForm/SearchForm';
 
 const dataTypes = {
   'local': local,
@@ -33,7 +34,8 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        < Menu filterNewsType={this.filterNewsType} />
+        < Menu filterNewsType={this.filterNewsType} filterNewsSearch={this.filterNewsSearch} />
+        < SearchForm />
         < NewsContainer data={this.state.type} />
       </div>
     );
