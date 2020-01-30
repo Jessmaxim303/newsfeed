@@ -4,8 +4,8 @@ import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle'
 
 const NewsContainer = (props) => {
-	return props.data.map(data => {
-   return < NewsArticle data={data}/>
+	return props.data.map(news => {
+   return < NewsArticle data={news}/>
   })
 
 }
